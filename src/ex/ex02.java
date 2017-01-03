@@ -8,18 +8,18 @@ import java.util.Scanner;
  */
 public class ex02 {
 	public static void main(String[] args) {
-Scanner scn=new Scanner(System.in);
-int sum=0;
-int sum2=0;
-String str=scn.nextLine();
-String data[]=str.split(" ");
-for(int i=0;i<data.length;i++){
-	int j=Integer.parseInt(data[i]);
-	sum++;
-	sum2=sum2+j;
-}
-double a=(Math.round(((float)sum2/sum)*1000)*0.001);
-System.out.println(sum);
-System.out.printf("%.3f",a);
+		Scanner scn = new Scanner(System.in);
+		int sum = 0;
+		int sum2 = 0;
+		String str = scn.nextLine();
+		String data[] = str.split(" ");
+		for (int i = 0; i < data.length; i++) {
+			int j = Integer.parseInt(data[i]);
+			sum++;
+			sum2 = sum2 + j;
+		}
+		double a = (Math.round(((float) sum2 / sum) * 1000) * 0.001);
+		System.out.println(sum);
+		System.out.printf("%.3f", a);
 	}
 }
